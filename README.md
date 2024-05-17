@@ -98,4 +98,5 @@ Aqui estão algumas tarefas a serem realizadas nesse primeiro momento no projeto
 [] Fixar o Footer ao final da página.  
 [] Melhorar o visual dos Badges que serão os labels da vaga.  
 [] Implementar o Refetch no Header, ou em um lugar melhor, para refazer a chamada ao endpoint.  
-[] Criar um modal com um formulário para preenchimento de dados.
+[] Criar um modal com um formulário para preenchimento de dados.  
+[] Verificar workflow do Ci/CD, não está funcionando como o esperado, está gerando aplicação do Readme: https://lucaspmarra.github.io/vue-for-aspiring-front-end-engineers/
