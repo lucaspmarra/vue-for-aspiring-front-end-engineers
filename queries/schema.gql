@@ -1,0 +1,58 @@
+query issues($issuesFirst: Int = 100, $labelsFirst: Int = 100) {
+    repository(owner: "", name: ""){
+        id
+        owner {
+            id
+            login
+            url
+        }
+        issues(first: $issuesFirst, states: OPEN, orderBy: {field: CREATED_AT, direction: DESC}) {
+            totalCount
+            pageInfo {
+                hasNextPage
+                hasPreviousPage
+            }
+            nodes {
+                number
+                url
+                title
+                state
+                author {
+                    login
+                }
+                bodyUrl
+                bodyHTML
+                labels(first: $labelsFirst){
+                    nodes {
+                        name
+                    }
+                }
+            }
+        }
+    }
+}
+
+query getRepoId{
+    repository(name: "", owner: "lucaspmarra"){
+        id
+        owner {
+            id
+            login
+            url
+        }
+    }
+}
+
+mutation createNewIssue($repoId: ID!, $issueTitle: String!){
+    createIssue(input: {
+        repositoryId: $repoId,
+        title: $issueTitle,
+        body: "Teste de body de issue"
+    }) {
+        issue {
+            id
+            title
+            body
+        }
+    }
+}

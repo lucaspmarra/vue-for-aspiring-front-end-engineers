@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Avenir, Helvetica, Arial, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  //min-height: 100vh;
+}
+
+.light {
+  color: #2c3e50 !important;
+  background-color: #f1f4f6 !important;
+  //background-color: #F9F7F7 !important;
+}
+
+.dark {
+  background-color: #222831 !important;
+  color: #EEF7FF !important;
+}

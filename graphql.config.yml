@@ -1,0 +1,5 @@
+schema:
+  - https://api.github.com/graphql:
+      headers:
+        Authorization: bearer ${NUXT_SECRET_API_GRAPH_TOKEN}
+documents: '**/*.gql'
