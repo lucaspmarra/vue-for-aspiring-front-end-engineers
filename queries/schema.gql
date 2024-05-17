@@ -1,5 +1,5 @@
 query issues($issuesFirst: Int = 100, $labelsFirst: Int = 100) {
-    repository(owner: "", name: ""){
+    repository(owner: "lucaspmarra", name: "vue-for-aspiring-front-end-engineers"){
         id
         owner {
             id
@@ -47,7 +47,7 @@ mutation createNewIssue($repoId: ID!, $issueTitle: String!){
     createIssue(input: {
         repositoryId: $repoId,
         title: $issueTitle,
-        body: "Teste de body de issue"
+        body: "Só testando o endpoint"
     }) {
         issue {
             id

@@ -93,5 +93,9 @@ _public_repo_: É necessário apenas esse escopo para criação de issue usando 
 Aqui estão algumas tarefas a serem realizadas nesse primeiro momento no projeto:
 
 [] Adicionar documentação adicional: Aceito ajuda para formatar o readme melhor para ajudar quem está iniciando no Github.  
-[] Melhorar visual dos cards de exibição das issues do repositório. 
+[] Melhorar visual dos cards de exibição das issues do repositório.   
+[] Melhorar a contagem de Issues que está "solta".  
+[] Fixar o Footer ao final da página.  
+[] Melhorar o visual dos Badges que serão os labels da vaga.  
+[] Implementar o Refetch no Header, ou em um lugar melhor, para refazer a chamada ao endpoint.  
 [] Criar um modal com um formulário para preenchimento de dados.

@@ -5,7 +5,7 @@ const {$graphql} = useNuxtApp();
 
 const query = gql`
 query issues($issuesFirst: Int = 100, $labelsFirst: Int = 100) {
-    repository(owner: "", name: ""){
+    repository(owner: "lucaspmarra", name: "vue-for-aspiring-front-end-engineers"){
         id
         owner {
             id
